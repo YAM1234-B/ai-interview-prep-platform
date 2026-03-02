@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Select Your Interview Role</h2>
+
+<form action="/interview" method="GET">
+    <label>Choose Role:</label>
+    <select name="role">
+        <option value="web">Web Development</option>
+        <option value="ml">Machine Learning</option>
+        <option value="data">Data Science</option>
+    </select>
+
+    <label>Difficulty:</label>
+    <select name="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <button type="submit">Start Interview</button>
+</form>
+
+{% endblock %}
